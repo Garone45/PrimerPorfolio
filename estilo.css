@@ -6,7 +6,7 @@ body {
   background-image: url('4k-streaming-5155-x-2900-wallpaper-skgdxac7ev94n4b6.jpg');
   background-size: cover; 
   background-position: center;  
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-attachment: fixed;
   margin-left: 220px; /* espacio para el menú lateral */
 }
@@ -22,26 +22,33 @@ body {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 0 8px rgba(59, 19, 70, 0.2);
+  
+  /* Fondo semitransparente para destacar sobre el fondo */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
 }
+
 .menu a {
   display: block;
   padding: 15px 25px;
   text-decoration: none;
-  color: #070707;
+  color: #ffffff; /* texto claro */
   font-weight: 600;
   font-size: 17px;
   transition: all 0.3s ease;
   border-left: 4px solid transparent;
 }
+
+/* Hover con animación */
 .menu a:hover {
-  background: rgba(0, 0, 0, 0.1);
-  color: rgb(0, 0, 0);
-  border-left: 4px solid darkblue;
-  text-shadow: 0 0 8px rgba(100, 100, 163, 0.199);
+  background: rgba(0, 123, 255, 0.2);
+  color: #fff;
+  border-left: 4px solid #007bff;
+  text-shadow: 0 0 8px rgba(0, 123, 255, 0.7);
+  transform: translateX(5px); /* se corre un poquito */
 }
-
-
 /* --- Presentación --- */
 #presentacion {
   text-align: center;
