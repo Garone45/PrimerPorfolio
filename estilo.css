@@ -22,8 +22,7 @@ body {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  
-  /* Fondo semitransparente para destacar sobre el fondo */
+
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
 
@@ -47,7 +46,7 @@ body {
   color: #fff;
   border-left: 4px solid #007bff;
   text-shadow: 0 0 8px rgba(0, 123, 255, 0.7);
-  transform: translateX(5px); /* se corre un poquito */
+  transform: translateX(5px); 
 }
 /* --- Presentación --- */
 #presentacion {
@@ -224,7 +223,7 @@ section h2 {
 #redes {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 18px;
   margin: 40px 0;
 }
 
@@ -257,6 +256,7 @@ section h2 {
   transform: scale(1.1);
   opacity: 0.85;
 }
+
 
 /* --- Contacto --- */
 #contacto form {
